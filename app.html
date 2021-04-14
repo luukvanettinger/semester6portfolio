@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Luuk van Ettinger</title>
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i"
+        rel="stylesheet">
+
+        <!-- Bootstrap CSS File -->
+        <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Libraries CSS Files -->
+        <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+        <link href="lib/hover/hover.min.css" rel="stylesheet">
+
+        <!-- Blog Stylesheet File -->
+        <link href="css/blog.css" rel="stylesheet">
+
+        <!-- Main Stylesheet File -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- Responsive css -->
+        <link href="css/responsive.css" rel="stylesheet">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="images/favicon.png">
+</head>
+
+<body>
+
+    <!-- start section navbar -->
+    <nav id="main-nav-subpage" class="subpage-nav">
+        <div class="row">
+            <div class="container">
+
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                </div>
+
+                <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
+
+                <ul class="nav-menu list-unstyled">
+                    <li><a href="leeswijzer.html" class="smoothScroll">Leeswijzer</a></li>
+                    <li><a href="begrippenlijst.html" class="smoothScroll">Begrippenlijst</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End section navbar -->
+    <!-- start section main content -->
+    <div class="main-content paddsection">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="row">
+                        <div class="container-main single-main">
+                            <div class="col-md-12">
+                                <div class="block-main mb-30">
+                                    <img src="images/reactNativeAppBig.jpg" class="img-responsive" alt="image">
+                                    <div class="content-main single-post padDiv">
+                                        <div class="journal-txt">
+                                            <h4><a href="#">React Native App</a></h4>
+                                        </div>
+                                        <div class="post-meta">
+                                            <ul class="list-unstyled mb-0">
+                                                <img class="icon" src="images/workshopicon.png">
+                                                <li class="author">Prototyping</li>
+                                            </ul>
+                                        </div>
+                                        <p class="mb-30">
+                                            Omdat de werknemers van Simac gebruik maken van zowel IOS als Anrdoid hebben we gekozen om de app te ontwikkelen in React Native,
+                                            aangezien de code base hiervan voor beide operating systems gebruikt kan worden. De back-end wordt in Python ontwikkeld, maar in het vroege stadium 
+                                            van de app ontwikkeling heb ik verschillende functies die te maken hebben met data opslag en uitwisseling, met Firebase opgelost om te onderzoeken of dit een goede 
+                                            vervanger is voor de traditionele back-ends van applicaties.
+                                        </p>
+                                        <a target="_blank" href="https://github.com/luukvanettinger/simac-frontend">
+                                            <div class="btn">
+                                            View on GitHub <i class="ion-social-github"></i>
+                                            </div>
+                                        </a>
+                                        <blockquote>
+                                            React Native app waarbij ik met Firebase expirimenteer.</blockquote><br><br><br>
+                                            <div class="journal-txt">
+                                                <h4><a href="#">Firebase Configuration file</a></h4>
+                                            </div>
+                                            <p class="mb-30">
+                                                Voor we iets met Firebase kunnen gaan doen moeten we onze React Native applicatie verbinden met onze Simac Firebase API. 
+                                                <a target="_blank" href="https://firebase.google.com">Hier kun je een Firebase project maken.</a> Zodra je klaar bent met 
+                                                het maken van een Firebase project, is het tijd om de API gegevens van je Firebase project over te nemen en in een 
+                                                firebase config file in je React Native applicatie te plaatsen. Wanneer je dit op de juiste manier hebt gedaan kun je firebase
+                                                vanuit deze file exporteren. Nu kun je vanuit overal in je React Native project firebase importeren met de juiste configuratie naar 
+                                                jouw Firebase project!
+                                            </p>
+                                            <a target="_blank" href="https://github.com/luukvanettinger/simac-frontend/commit/91a452776d988c1f0744f1a23c574569e0c34192">
+                                                <div class="btn">
+                                                View on GitHub <i class="ion-social-github"></i>
+                                                </div>
+                                            </a>
+                                            <img src="images/firebaseConfig.png" class="malvae2" alt="image"><br><br><br>
+                                            <div class="journal-txt">
+                                                <h4><a href="#">Login & Error handling</a></h4>
+                                            </div>
+                                            <p class="mb-30">
+                                                Vervolgens importeren we onze Firebase config file in de login screen samen met de useState hook en React Native Alert.
+                                                We maken een state aan voor het email adres en een voor het wachtwoord. De initial value is van beide een lege string. Zodra de 
+                                                user de text inputs invuld worden deze states geset met de value van de text inputs. Zodra de user op de login button klikt 
+                                                wordt de onLoginPress functie aangeroepen en zal firebase checken of de email & password combinatie overeenkomt met een van de gebruikers
+                                                die in jouw Firebase project geregistreerd staan. Zodra dit het geval is worden de gegevens van deze user opgehaald en wordt de user 
+                                                doorverwezen naar de landing screen. Wanneer deze combinatie niet overeenkomt wordt er in een Alert een error melding getoond.
+                                            </p>
+                                            <a target="_blank" href="https://github.com/luukvanettinger/simac-frontend/commit/91a452776d988c1f0744f1a23c574569e0c34192">
+                                                <div class="btn">
+                                                View on GitHub <i class="ion-social-github"></i>
+                                                </div>
+                                            </a>
+                                            <img src="images/login.png" class="malvae2" alt="image"><br><br><br>
+                                            <img src="images/login.mp4" class="malvaeVideo"><br><br><br>
+                                            <div class="journal-txt">
+                                                <h4><a href="#">Forgot Password</a></h4>
+                                            </div>
+                                            <p class="mb-30">
+                                                Zodra gebruikers hun wachtwoord vergeten, moeten ze de optie hebben om een nieuw wachtwoord aan te vragen. Firebase helpt ons ook hiermee,
+                                                door een state 'newPassword' aan te maken, kan de gebruiker zijn email in een textInput typen en wordt newPassword met het email adres van de 
+                                                gebruiker geset. ( userEmail was hier een betere state naam geweest achteraf gezien ) Zodra de send button word geklikt, wordt de resetPassword functie
+                                                aangeroepen waarin firebase controleert of het email adres in jouw firebase project bestaat, zodra dat zo is wordt er een reset wachtwoord mailtje 
+                                                naar het ingevulde mail adres gestuurd.
+                                            </p>
+                                            <a target="_blank" href="https://github.com/luukvanettinger/simac-frontend/commit/66ea3d05f2764d0a97fdeac3fc5e6c0d08369fae">
+                                                <div class="btn">
+                                                View on GitHub <i class="ion-social-github"></i>
+                                                </div>
+                                            </a>
+                                            <img src="images/resetPassword.png" class="malvae2" alt="image"><br><br><br>
+                                            <img src="images/resetPassword.mp4" class="malvaeVideo"><br><br><br>
+                                            <div class="journal-txt">
+                                                <h4><a href="#">Auto Login</a></h4>
+                                            </div>
+                                            <p class="mb-30">
+                                                Achter de schermen houdt Firebase in de local storage van een device bij welke user id ingelogd is. Hier kunnen we gebruik van maken 
+                                                door in een useEffect hook te checken of dit het geval is, zodra dit het geval is kunnen we de data van deze gebruiker ophalen en de gebruiker 
+                                                door verwijzen naar de landing pagina, zodat de user niet steeds opnieuw zijn inlog gegevens hoeft in te voeren. Een grote UX win als je het mij vraagt.
+                                            </p>
+                                            <a target="_blank" href="https://github.com/luukvanettinger/simac-frontend/commit/4d96cf97282c317d0b9ab6dce03d541d78d11853">
+                                                <div class="btn">
+                                                View on GitHub <i class="ion-social-github"></i>
+                                                </div>
+                                            </a>
+                                            <img src="images/autoLogin.png" class="malvae2" alt="image"><br><br><br>
+                                            <img src="images/autoLogin.mp4" class="malvaeVideo"><br><br><br>
+   
+
+
+                                        <a href="javascript:history.back()"><img class="back" src="images/back.png" alt="reviews2"></a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!--  </div> -->
+    <!-- start section main content -->
+
+
+
+            <!-- JavaScript Libraries -->
+            <script src="lib/jquery/jquery.min.js"></script>
+            <script src="lib/jquery/jquery-migrate.min.js"></script>
+            <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="lib/typed/typed.js"></script>
+            <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+            <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+            <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+
+            <!-- Template Main Javascript File -->
+            <script src="js/main.js"></script>
+
+</body>
+
+</html>

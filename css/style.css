@@ -129,7 +129,12 @@ p {
   text-transform: uppercase;
 }
 
+.malvaeVideo {
+  width: 40%
+}
+
 .btn:hover, .btn:focus {
+  background: #b8a07e;
   color: #fff;
 }
 
