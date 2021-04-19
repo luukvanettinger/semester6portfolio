@@ -124,7 +124,7 @@
                                                 </div>
                                             </a>
                                             <img src="images/login.png" class="malvae2" alt="image"><br><br><br>
-                                            <img src="images/login.mp4" class="malvaeVideo"><br><br><br>
+                                            <img src="images/login.gif" class="malvaeVideo"><br><br><br>
                                             <div class="journal-txt">
                                                 <h4><a href="#">Forgot Password</a></h4>
                                             </div>
@@ -141,7 +141,7 @@
                                                 </div>
                                             </a>
                                             <img src="images/resetPassword.png" class="malvae2" alt="image"><br><br><br>
-                                            <img src="images/resetPassword.mp4" class="malvaeVideo"><br><br><br>
+                                            <img src="images/resetPassword.gif" class="malvaeVideo"><br><br><br>
                                             <div class="journal-txt">
                                                 <h4><a href="#">Auto Login</a></h4>
                                             </div>
@@ -156,11 +156,62 @@
                                                 </div>
                                             </a>
                                             <img src="images/autoLogin.png" class="malvae2" alt="image"><br><br><br>
-                                            <img src="images/autoLogin.mp4" class="malvaeVideo"><br><br><br>
+                                            <img src="images/autoLogin.gif" class="malvaeVideo"><br><br><br>
+                                            <div class="journal-txt">
+                                                <h4><a href="#">Development enviroment / navigation</a></h4>
+                                            </div>
+                                            <p class="mb-30">
+                                                Met behulp van de <a href="https://reactnavigation.org">React Navigation library</a> heb ik de complete navigatie 
+                                                van de app gebouwd. Het begint bovenaan de mappen structuur in de App.tsx, binnen een safeAreaProvider is een component 
+                                                genaamd Navigation te vinden. Hierbij wordt een colorScheme prop meegegeven, hier doen we voor nu nog niks mee maar dit 
+                                                geeft ons later de optie om themability toe te voegen zoals bijvoorbeeld dark theme.
+                                            </p>
+                                            <a target="_blank" href="https://github.com/luukvanettinger/simac-frontend/commit/6c750a0ddff64637fc0ebb65c79760fc0ed12cd0">
+                                                <div class="btn">
+                                                View on GitHub <i class="ion-social-github"></i>
+                                                </div>
+                                            </a>
+                                            <img src="images/navigation1.png" class="malvae2" alt="image"><br><br><br>
+                                            <p class="mb-30">
+                                                Vervolgens zijn alle bestanden die met de navigatie te maken hebben, te vinden in de map navigation. Hierin staat 
+                                                de Index.tsx waar de component navigation (die we in App.tsx zagen) te vinden is. deze function component returnt
+                                                een navigation container met daarin de RootNavigator component. Deze wordt hieronder gedefinieert en bestaat uit 
+                                                2 stack screens binnen een stack navigator. Stack screen nummer 1 is de LoginScreen, hier komt de gebruiker op uit 
+                                                bij het opstarten van de app. Stack screen nummer 2 is de BottomTabNavigator, dit is een component die voor de 
+                                                tab navigatie in de app zorgt.
+                                            </p>
+                                            <img src="images/navigation2.png" class="malvae2" alt="image"><br><br><br>
+                                            <p class="mb-30">
+                                                Vervolgens is de laatste stap de BottomTabNavigator zelf, deze is in de navigation map als BottomTabNavigator.tsx te 
+                                                vinden. Deze bestaat uit 3 BottomTabScreens en elk van deze BottomTabScreens krijgt een component mee gegeven die onderaan
+                                                worden gedefinieert. De Food/Landing/Nature Navigators bezitten alle 3 weer een component die uit het mapje Screens wordt 
+                                                gehaald. Deze componenten uit Screens is waar de uiteindelijke code van de schermen komt te staan, daar wordt alles qua styling 
+                                                en functionaliteiten gedaan voor de schermen die de user krijgt te zien.
+                                            </p>
+                                            <img src="images/navigation3.png" class="malvae2" alt="image"><br><br><br>
+                                            <img src="images/navigation.gif" class="malvaeVideo"><br><br><br>
    
-
-
-                                        <a href="javascript:history.back()"><img class="back" src="images/back.png" alt="reviews2"></a>
+<br><br><br>
+                                        <div class="buttonContainer">
+                                            <a href="ontwerp.html">
+                                                <div class="btn">
+                                                    <i class="ion-android-arrow-back"></i> Previous
+                                                </div>
+                                            </a>
+                                            <div style="opacity: 0">hhh</div>
+                                            <a href="leeswijzer.html">
+                                                <div class="btn">
+                                                NEXT <i class="ion-android-arrow-forward"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <br>
+                                        <a href="index.html">
+                                            <div class="btn">
+                                            Home <i class="ion-home"></i>
+                                            </div>
+                                        </a>
+    
 
                                     </div>
                                 </div>
