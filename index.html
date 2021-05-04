@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Luuk van Ettinger</title>
+  <title>S6 | Portfolio</title>
   <meta content="" name="keywords">
   <meta content="" name="description">
 
@@ -116,24 +116,41 @@
       <div class="section-title text-center">
         <h2>Producten</h2>
       </div>
+                                      <div style="  display: block;
+                                      margin-left: auto;
+                                      margin-right: auto;
+                                      width: 270px ">
+                                        <div class="buttonContainer">
+                                           
+                                                <div onclick="activatePeriode1()" id="btn1" class="btn">
+                                                    Periode 1
+                                                </div>
+                                          
+                                            <div style="opacity: 0">hhh</div>
+                                      
+                                                <div onclick="activatePeriode2()" id="btn2" class="btn">
+                                                Periode 2
+                                                </div>
+                                      
+                                        </div>
+                                      </div>
+                                        <br><br><br>
+
+
     </div>
 
+    <div style="display: none;" id="periode1">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
 
-          <div class="portfolio-list">
-
+          <div style="margin-left: 35px" class="portfolio-list">
             <ul class="nav list-unstyled" id="portfolio-flters">
-              <li class="filter filter-active" data-filter=".all">all</li> 
-              <li class="filter"  data-filter=".trends">trends</li>         
-              <li class="filter"  data-filter=".concept">concept</li>
-              <li class="filter" data-filter=".business-model">business-model</li>
-              <li class="filter" data-filter=".marketing">marketing</li>
-              <li class="filter" data-filter=".design">design</li>
-              <li class="filter" data-filter=".UX">UX</li>
-              <li class="filter" data-filter=".gebruikers-onderzoek">gebruikers-onderzoek</li>
-              <li class="filter" data-filter=".development">development</li>
+              <li id="filterALL" class="filter filter-active" data-filter=".all">ALL</li> 
+              <li class="filter"  data-filter=".sco">SCO</li>         
+              <li class="filter"  data-filter=".ux">UX</li>
+              <li class="filter" data-filter=".dev">DEV</li>
+              <li class="filter" data-filter=".po">PO</li>
             </ul>
 
           </div>
@@ -141,125 +158,188 @@
           <div class="portfolio-container">
 
 
+            <a href="trendresearch.html">
+              <div class=" col-lg-4 col-md-6 portfolio-thumbnail all sco">
+                <div class="Card">
+                    <br>
+                    <p class="cardText2">Trend Research</p>
+                    <hr class="cardLine">
+                    <p class="cardText3">Trends </p>
+                    <p class="cardText1">SCO</p>
+                  </div>
+              </div>
+            </a>
 
-            <div class=" col-lg-4 col-md-6 portfolio-thumbnail all trends concept">
-              <a href="trendresearch.html">
-                <img class="img_img" src="images/fieldresearch2.jpg" alt="img">
-                <div class="block1-wrapbtn w-size2">
-                  <a href="trendresearch.html" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                    Trend Research
-                  </a>
-                </div>
-              </a>
-            </div>
+            <a href="survey.html">
+              <div class=" col-lg-4 col-md-6 portfolio-thumbnail all ux">
+                <div class="Card">
+                    <br>
+                    <p class="cardText2">Survey</p>
+                    <hr class="cardLineUX">
+                    <p class="cardText3">Gebruikersonderzoek </p>
+                    <p class="cardText1">UX</p>
+                  </div>
+              </div>
+            </a>
+            <a href="persona.html">
+              <div class=" col-lg-4 col-md-6 portfolio-thumbnail all ux">
+                <div class="Card">
+                    <br>
+                    <p class="cardText2">Persona's</p>
+                    <hr class="cardLineUX">
+                    <p class="cardText3">Gebruikersonderzoek </p>
+                    <p class="cardText1">UX</p>
+                  </div>
+              </div>
+            </a>
+            <a href="concept.html">
+              <div class=" col-lg-4 col-md-6 portfolio-thumbnail all sco">
+                <div class="Card">
+                    <br>
+                    <p class="cardText2">Concept Simac App</p>
+                    <hr class="cardLine">
+                    <p class="cardText3">Concept </p>
+                    <p class="cardText1">SCO</p>
+                  </div>
+              </div>
+            </a>
+            <a href="ontwerp.html">
+              <div class=" col-lg-4 col-md-6 portfolio-thumbnail all ux">
+                <div class="Card">
+                    <br>
+                    <p class="cardText2">App Ontwerp</p>
+                    <hr class="cardLineUX">
+                    <p class="cardText3">Design</p>
+                    <p class="cardText1">UX</p>
+                  </div>
+              </div>
+            </a>
+            <a href="app.html">
+              <div class=" col-lg-4 col-md-6 portfolio-thumbnail all dev">
+                <div class="Card">
+                    <br>
+                    <p class="cardText2">React Native Simac App</p>
+                    <hr class="cardLineDEV">
+                    <p class="cardText3">Development </p>
+                    <p class="cardText1">DEV</p>
+                  </div>
+              </div>
+            </a>
+        
+          
 
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all concept trends gebruikers-onderzoek">
-              <a href="survey.html">
-                <img src="images/review4.jpg" alt="img">
-                <div class="block1-wrapbtn w-size2">
-                  <a href="survey.html" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                    Survey
-                  </a>
-                </div>
-              </a>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all concept gebruikers-onderzoek">
-              <a href="persona.html">
-                <img src="images/persona.jpg" alt="img">
-                <div class="block1-wrapbtn w-size2">
-                  <a href="persona.html" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                    Persona's
-                  </a>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all concept">
-              <a href="concept.html">
-                <img src="images/conceptimg.jpg" alt="img">
-                <div class="block1-wrapbtn w-size2">
-                  <a href="concept.html" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                    Concept
-                  </a>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all design">
-              <a href="ontwerp.html">
-                <img src="images/ontwerp1.jpg" alt="img">
-                <div class="block1-wrapbtn w-size2">
-                  <a href="ontwerp.html" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                    App Ontwerp
-                  </a>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all development">
-              <a href="app.html">
-                <img src="images/reactNativeApp.jpg" alt="img">
-                <div class="block1-wrapbtn w-size2">
-                  <a href="app.html" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                    React Native App
-                  </a>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all business-model">
-              <a href="businessmodel.html">
-                <img src="images/placeholder1.jpg" alt="img">
-                <div class="block1-wrapbtn w-size2">
-                  <a href="businessmodel.html" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                    Business Model
-                  </a>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all marketing">
-              <a href="marketing.html">
-                <img src="images/marketing.jpg" alt="img">
-                <div class="block1-wrapbtn w-size2">
-                  <a href="marketing.html" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                    Marketing Strategie
-                  </a>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all marketing trends">
-              <a href="trendresearch2.html">
-                <img src="images/trends2.jpg" alt="img">
-                <div class="block1-wrapbtn w-size2">
-                  <a href="trendresearch2.html" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                    Trends:<br> E-Mail Marketing
-                  </a>
-                </div>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-6 portfolio-thumbnail all ">
-              <a href="leeswijzer.html">
-                <img src="images/leeswijzer5.jpg" alt="img">
-                <div class="block1-wrapbtn w-size2">
-                  <a href="" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                    Leeswijzer
-                  </a>
-                </div>
-              </a>
-            </div>
-
-            <!-- <div class="col-lg-4 col-md-6 portfolio-thumbnail all ">
-              <a href="begrippenlijst.html">
-                <img src="images/begrippenlijst.jpg" alt="img">
-                <div class="block1-wrapbtn w-size2">
-                  <a href="" class="flex-c-m size2 m-text2 bg3 hov1 trans-0-4">
-                    Begrippenlijst
-                  </a>
-                </div>
-              </a>
-            </div> -->
 
           </div>
         </div>
       </div>
     </div>
+    </div>
+
+
+
+
+    <div id="periode2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+  
+            <div style="margin-left: 35px"  class="portfolio-list">
+              <ul class="nav list-unstyled" id="portfolio-flters">
+                <li id="filterALL" class="filter filter-active" data-filter=".all">ALL</li> 
+                <li class="filter"  data-filter=".sco">SCO</li>         
+                <li class="filter"  data-filter=".ux">UX</li>
+                <li class="filter" data-filter=".dev">DEV</li>
+                <li class="filter" data-filter=".po">PO</li>
+              </ul>
+  
+            </div>
+  
+            <div class="portfolio-container">
+          
+            
+            <a href="businessmodel.html">
+              <div class=" col-lg-4 col-md-6 portfolio-thumbnail all sco">
+                <div class="Card">
+                    <br>
+                    <p class="cardText2">Business modal & value <br> proposition canvas</p>
+                    <hr class="cardLine">
+                    <p class="cardText3">Business Model </p>
+                    <p class="cardText1">SCO</p>
+                  </div>
+              </div>
+            </a>
+            <a href="marketing.html">
+              <div class=" col-lg-4 col-md-6 portfolio-thumbnail all sco">
+                <div class="Card">
+                    <br>
+                    <p class="cardText2">Marketing Strategie</p>
+                    <hr class="cardLine">
+                    <p class="cardText3">Marketing & Concept </p>
+                    <p class="cardText1">SCO</p>
+                  </div>
+              </div>
+            </a>
+            <a href="marketing.html">
+              <div class=" col-lg-4 col-md-6 portfolio-thumbnail all ux">
+                <div class="Card">
+                    <br>
+                    <p class="cardText2">Honeycomb Framework</p>
+                    <hr class="cardLineUX">
+                    <p class="cardText3">User Experience </p>
+                    <p class="cardText1">UX</p>
+                  </div>
+              </div>
+            </a>
+            <a href="trendresearch2.html">
+              <div class=" col-lg-4 col-md-6 portfolio-thumbnail all sco">
+                <div class="Card">
+                    <br>
+                    <p class="cardText2">E-Mail Marketing Trend Research</p>
+                    <hr class="cardLine">
+                    <p class="cardText3">Marketing & Trends </p>
+                    <p class="cardText1">SCO</p>
+                  </div>
+              </div>
+            </a>
+            <a href="emaildesigns.html">
+              <div class=" col-lg-4 col-md-6 portfolio-thumbnail all ux">
+                <div class="Card">
+                    <br>
+                    <p class="cardText2">Marketing E-mail designs</p>
+                    <hr class="cardLineUX">
+                    <p class="cardText3">Design </p>
+                    <p class="cardText1">UX</p>
+                  </div>
+              </div>
+            </a>
+            <a href="marketing.html">
+              <div class=" col-lg-4 col-md-6 portfolio-thumbnail all ux">
+                <div class="Card">
+                    <br>
+                    <p class="cardText2">Interviews</p>
+                    <hr class="cardLineUX">
+                    <p class="cardText3">Gebruikersonderzoek</p>
+                    <p class="cardText1">UX</p>
+                  </div>
+              </div>
+            </a>
+            <a href="marketing.html">
+              <div class=" col-lg-4 col-md-6 portfolio-thumbnail all ux">
+                <div class="Card">
+                    <br>
+                    <p class="cardText2">Survey</p>
+                    <hr class="cardLineUX">
+                    <p class="cardText3">Gebruikersonderzoek</p>
+                    <p class="cardText1">UX</p>
+                  </div>
+              </div>
+            </a>
+  
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
 
   </div>
   <!-- End section portfolio -->
@@ -293,6 +373,37 @@
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="lib/magnific-popup/magnific-popup.min.js"></script>
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script>
+      function activatePeriode1() {
+        var x = document.getElementById("periode1");
+        var x2 = document.getElementById("periode2");
+        var btn1 = document.getElementById("btn1")
+        var btn2 = document.getElementById("btn2")
+
+          x.style.display = "block";
+          x.style.position = "relative";
+          x.style.opacity = "1";
+          x2.style.display = "none";
+          btn1.style.background = "#b8a07e";
+          btn2.style.background = "#333";
+
+          document.getElementById('filterALL').click();
+}
+
+function activatePeriode2() {
+        var x = document.getElementById("periode2");
+        var x2 = document.getElementById("periode1");
+        var btn1 = document.getElementById("btn2")
+        var btn2 = document.getElementById("btn1")
+        
+          x.style.display = "block";
+          x2.style.display = "none";
+          btn1.style.background = "#b8a07e";
+          btn2.style.background = "#333";
+
+          document.getElementById('filterALL').click();
+}
+  </script>
 
 
 
