@@ -793,4 +793,15 @@ nav ul li a {
   width: 80%
 }
 
+.cardLinePO {
+  background-color: #35874b; 
+  width: 80%
+}
+
+.titleProduct {
+  font-size: 60px;
+  font-family: 'Playfair Display', serif;
+
+}
+
 
