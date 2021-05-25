@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>S6 | Portfolio</title>
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,700,700i,900,900i"
+        rel="stylesheet">
+
+        <!-- Bootstrap CSS File -->
+        <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Libraries CSS Files -->
+        <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+        <link href="lib/hover/hover.min.css" rel="stylesheet">
+
+        <!-- Blog Stylesheet File -->
+        <link href="css/blog.css" rel="stylesheet">
+
+        <!-- Main Stylesheet File -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- Responsive css -->
+        <link href="css/responsive.css" rel="stylesheet">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="images/favicon.png">
+</head>
+
+<body>
+
+    <!-- start section navbar -->
+    <nav id="main-nav-subpage" class="subpage-nav">
+        <div class="row">
+            <div class="container">
+
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                </div>
+
+                <div class="responsive"><i data-icon="m" class="ion-navicon-round"></i></div>
+
+                <ul class="nav-menu list-unstyled">
+                    <li><a href="leeswijzer.html" class="smoothScroll">Leeswijzer</a></li>
+                    <li><a href="begrippenlijst.html" class="smoothScroll">Begrippenlijst</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End section navbar -->
+    <!-- start section main content -->
+    <div class="main-content paddsection">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="row">
+                        <div class="container-main single-main">
+                            <div class="col-md-12">
+                                <div class="block-main mb-30">
+
+                                    <div class="content-main single-post padDiv">
+                                        <div>
+                                            <h4 class="titleProduct">Simac App functionalities React Native & Firebase</h4>
+                                        </div>
+                    
+                                        
+                                        <p class="mb-30">
+                                            Voor de Simac App heb ik verschillende user stories uitgeschreven om een beeld te krijgen wat voor functionaliteiten 
+                                            gebouwd moeten worden om de app zover te krijgen dat deze door gebruikers getests kan worden. Hieruit zijn een aantal 
+                                            functionaliteiten gekomen die ik heb gemaakt en hier zal toelichten. Hieronder is een link naar de GitHub repo waar de 
+                                            volledige code en versie beheer van de Simap app is te vinden.
+                                        </p>
+                                        <a target="_blank" href="https://github.com/luukvanettinger/simac-frontend">
+                                            <div class="btn">
+                                            View on GitHub <i class="ion-social-github"></i>
+                                            </div>
+                                        </a>
+                                        <br><br><br>
+<br>
+                                            <div class="journal-txt">
+                                                <h4><a href="#">Aanpak</a></h4>
+                                            </div>
+                                            <p class="mb-30">
+                                                Aan de hand van de verschillende user stories ben ik verschillende functionaliteiten gaan programmeren in de Simac app. Een aantal 
+                                                user stories waar ik mee te werk ben gegaan zijn hieronder te vinden:
+                                                <br><br>
+                                                - Als Simac werknemer wil ik een recept uit de Simac app opzoeken en klaar gaan maken.
+                                                <br>
+                                                - Als Simac werknemer wil ik kunnen zien welk recept goed gewaardeerd wordt, zodat ik weet welk recept lekker is.
+                                                <br>
+                                                - Als Simac werknemer wil ik bestaande recepten kunnen wijzigen, zodat de gegevens kloppen.
+                                                <br>
+                                                - Als Simac werknemer wil ik een bestaande recepten verwijderen.
+                                                <br>
+                                                - Als Simac werknemer wil ik verschillende recepten kunnen opslaan door middel van deze te liken.
+                                                <br><br>
+                                                Aan de hand van deze user stories ben ik de volgende basis functionaliteiten gaan bouwen voor het kook gedeelte van de Simac app.
+                                                Zodra deze gebouwd zijn wil ik deze functionaliteiten gaan testen op de doelgroep om de gebruikers ervaring van de Simac app te verbeteren.
+                                                <br><br>
+                                                Voor verdere toelichting van de development stack, <a href="app.html">zie deze link</a>
+                                                
+                                            </p>
+                                            <br>
+                                            <div class="journal-txt">
+                                                <h4><a href="#">Ophalen van recepten</a></h4>
+                                            </div>
+                                            <p>
+                                               Om alle recepten op te halen van de Simac app heb ik als eerste 2 states aangemaakt genaamd recipes en favorites. Deze hebben als 
+                                               initial value NULL en worden bij het laden van het scherm gevuld met de bijhorende data. Dit wordt gedaan door middel van een useEffect hook 
+                                               waarin ik als eerste een call doe naar de collection recipes in firestore. Hier set ik de recipes state met de data die uit de firestore backend komt.
+                                               Het zelfde doe ik hierna nog een keer voor de favorieten, hierbij maak ik de call naar de collection users waarin ik de document pak van de gebruiker
+                                               die is ingelogd. Als laatste kan ik nu de recepten filteren op de favorieten van de gebruiker door de recepten te filteren op recepten waarvan de ID overeenkomt met 
+                                               die van de favorieten.
+                                            </p>
+                                            <a target="_blank" href="https://github.com/luukvanettinger/simac-frontend/commit/3e1ce67fa4cc6db954cf28ec87f5a3a58308f1a4">
+                                                <div class="btn">
+                                                View on GitHub <i class="ion-social-github"></i>
+                                                </div>
+                                            </a>
+                                            <img src="images/dev1.png" class="malvae2" alt="image"><br><br><br>
+                                            <img src="images/dev1.gif" class="malvaeVideo"><br><br><br>
+                                            <div class="journal-txt">
+                                                <h4><a href="#">Toevoegen van recepten</a></h4>
+                                            </div>
+                                            <p>
+                                               Voor het toevoegen van recepten moet er een afbeelding in de backend worden opgeslagen. Het is bad practice om deze in de 
+                                               firebase backend op te slaan omdat wanneer de app veel gebruikers heeft dit enorm veel opslag en uiteindelijk dus geld kost.
+                                               Om deze reden sla ik de afbeeldingen op in Amazon S3 Bucket en sla ik de link van de afbeelding op in Firebase.
+                                            
+                                               Hiervoor doe ik eerst een call naar firebase om de API keys van mijn S3 bucket op te halen. Deze moeten absoluut niet in de code
+                                               worden opgeslagen wegens veiligheids redenen.
+                                               <br><br>
+                                               Vervolgens heb ik een functie gemaakt die wordt aangeroepen wanneer de create button wordt geklikt. Deze checkt eerst of alle input velden zijn 
+                                               ingevuld, zodra dit niet het geval is geeft die een alert met de message dat alle input velden ingevuld moeten zijn.
+                                               Als dit wel het geval is wordt er een random image id gemaakt, dit is handig voor later wanneer we een recept willen verwijderen of aanpassen.
+                                               Vervolgens wordt de image compressed naar een klein formaat, dit zorgt ervoor dat gebruikers geen enorme foto's kunnen toevoegen wat onnodig veel opslag 
+                                               kost en vervolgens heel lang duurt voor de gebruiker om te laden. Nadat de image in de S3 bucket is opgeslagen wordt de image url in een variable opgeslagen.
+                                               Deze wordt samen met de andere data van het aangemaakte recept geupload naar Firebase.
+                                            </p>
+                                            <a target="_blank" href="https://github.com/luukvanettinger/simac-frontend/commit/3e1ce67fa4cc6db954cf28ec87f5a3a58308f1a4">
+                                                <div class="btn">
+                                                View on GitHub <i class="ion-social-github"></i>
+                                                </div>
+                                            </a>
+                                            <img src="images/dev2.png" class="malvae2" alt="image"><br><br><br>
+                                            <img src="images/dev2.gif" class="malvaeVideo"><br><br><br>
+                                            <div class="journal-txt">
+                                                <h4><a href="#">Aanpassen van recepten</a></h4>
+                                            </div>
+                                            <p>
+                                               Zodra er op een edit recipe button wordt geklikt wordt er via props de gekozen recept info meegegeven naar de functie die 
+                                               wordt aangeroepen. In de onRecipeEditClick functie worden de verschillende states die bij het recept horen gevuld met de 
+                                               data die via de props werd meegegeven. Vervolgens kan de gebruiker deze input velden aanpassen en op save button klikken. door 
+                                               op de save button te klikken wordt de functie onEdit aangeroepen waarin er weer wordt gechecked of alle input velden zijn ingevuld.
+                                               Zodra dit het geval is wordt de nieuwe data naar het bijhorende recept gestuurd door de call uitevoeren naar collection recipes met als 
+                                               document de ID van het geselecteerde recept.
+                                            </p>
+                                            <a target="_blank" href="https://github.com/luukvanettinger/simac-frontend/commit/144962dcab6e1cb33c53764108d189df4a82e065">
+                                                <div class="btn">
+                                                View on GitHub <i class="ion-social-github"></i>
+                                                </div>
+                                            </a>
+                                            <img src="images/dev3.png" class="malvae2" alt="image"><br><br><br>
+                                            <img src="images/dev3.gif" class="malvaeVideo"><br><br><br>
+                                            <div class="journal-txt">
+                                                <h4><a href="#">Verwijderen van recepten</a></h4>
+                                            </div>
+                                            <p>
+                                               Wanneer de gebruiker op de delete button van een recept klikt wordt de functie 
+                                               onDeleteRecipeClick aangeroepen waardoor de gebruiker een popup te zien krijgt waar 
+                                               wordt gevraagd of hij/zij zeker weet of die het recept wilt verwijderen. Zodra de gebruiker 
+                                               hier op delete klikt word de functie onDelete aangeroepen.
+                                               <br>
+                                               <br>
+                                               Hier wordt als eerst de afbeelding uit de S3 Bucket verwijderd. Hier komt de imageID weer van pas 
+                                               die we bij het maken van een recept hebben aangemaakt. Hierdoor weten we de url van de afbeelding en kunnen 
+                                               we deze dus gemakkelijk verwijderen. Vervolgens wordt het recept ook in Firebase verwijderd.
+                                            </p>
+                                            <a target="_blank" href="https://github.com/luukvanettinger/simac-frontend/commit/144962dcab6e1cb33c53764108d189df4a82e065">
+                                                <div class="btn">
+                                                View on GitHub <i class="ion-social-github"></i>
+                                                </div>
+                                            </a>
+                                            <img src="images/dev4.png" class="malvae2" alt="image"><br><br><br>
+                                            <img src="images/dev4.gif" class="malvaeVideo"><br><br><br>
+                                            <div class="journal-txt">
+                                                <h4><a href="#">5. Recepten favorieten</a></h4>
+                                            </div>
+                                            <p>
+                                               Op de recept detail pagina wordt via parameters de bijhorende data van het recept meegegeven. Daarnaast is er een state waarin 
+                                               ik met een boolean bijhoud of het recept een favoriet is van de gebruiker. Wannneer deze true is, is het hartje ingekleurd en wanneer deze 
+                                               false is, is deze niet ingekleurd. In een useEffect hook check ik of het recept een favoriet is door te kijken of de id van het recept voorkomt 
+                                               in de favorieten van de gebruiker.
+                                               <br><br>
+                                               Wanneer de gebruiker op het hartje klikt wordt de like functie aangeroepen, hier wordt gechecked of de like state true or false is.
+                                               Wanneer deze false is wordt die toegevoegd aan de favorieten van de gebruiker in firebase, waardoor het hartje ook ingekleurd word.
+                                               Wanneer de state true is en er op het hartje wordt geklikt, wordt de favoriet van de gebruiker verwijderd.
+                                            </p>
+                                            <a target="_blank" href="https://github.com/luukvanettinger/simac-frontend/commit/144962dcab6e1cb33c53764108d189df4a82e065">
+                                                <div class="btn">
+                                                View on GitHub <i class="ion-social-github"></i>
+                                                </div>
+                                            </a>
+                                            <img src="images/dev5.png" class="malvae2" alt="image"><br><br><br>
+                                            <img src="images/dev5.gif" class="malvaeVideo"><br><br><br>
+                                            <br><br>
+<div class="journal-txt">
+    <h4><a href="#">Link naar Prototype</a></h4>
+</div>
+<p class="mb-30">
+    Voordat je de prototype kunt openen moet je de app Expo Go downloaden op je mobiel en moet je op een Android device zitten.
+    Door de link hieronder te klikken en vervolgens op deze webpagina onder projects bij simac-frontend op open te klikken. Wanneer je dit op pc 
+    doet moet je de QR code scannen, wanneer je dit op mobiel doet krijg je een popup die voor jou de app opent.
+    <br>
+    <div class="buttonContainer">
+    <a target="_blank" href="https://expo.io/@luuk25">
+        <div class="btn">
+        Prototype 
+        </div>
+    </a>
+
+
+</div>
+    <br>
+    Username: truusjevalkenburg@hotmail.com<br>
+    Password: password123
+</p>
+<br><br><br>
+
+                                                                                                                                            <div class="journal-txt">
+                                                                                                                                                <h4><a href="#">Conclusie</a></h4>
+                                                                                                                                            </div>
+                                                                                                                                            <p>
+                                                                                                                                                Met de nieuwe functionaliteiten is de basis van het kook gedeelte van de Simac app klaar om door gebruikers getest te worden. 
+                                                                                                                                                De volgende stap die ik ga nemen is dan ook het opstellen van een usability test en die wil ik bij verschillende gebruikers 
+                                                                                                                                                afnemen om erachter te komen waar valkuilen liggen op het gebied van de user experience van de Simac app. Met de resultaten hiervan 
+                                                                                                                                                wil ik de app weer verbeteren zodat het een gebruikers vriendelijke app word waarvan die zonder uitleg meteen duidelijk is voor nieuwe gebruikers.
+                                                                                                                                            </p>
+                                                                                                                                    
+                                                                                                                                    
+                           
+
+                                        <br><br><br>
+                                        <div class="buttonContainer">
+                                            <a href="survey2.html">
+                                                <div class="btn">
+                                                    <i class="ion-android-arrow-back"></i> Previous
+                                                </div>
+                                            </a>
+                                            <div style="opacity: 0">hhh</div>
+                                            <a href="peerreview.html">
+                                                <div class="btn">
+                                                NEXT <i class="ion-android-arrow-forward"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <br>
+                                        <a href="index.html">
+                                            <div class="btn">
+                                            Home <i class="ion-home"></i>
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!--  </div> -->
+    <!-- start section main content -->
+
+
+
+            <!-- JavaScript Libraries -->
+            <script src="lib/jquery/jquery.min.js"></script>
+            <script src="lib/jquery/jquery-migrate.min.js"></script>
+            <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+            <script src="lib/typed/typed.js"></script>
+            <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+            <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+            <script src="lib/isotope/isotope.pkgd.min.js"></script>
+
+
+            <!-- Template Main Javascript File -->
+            <script src="js/main.js"></script>
+
+</body>
+
+</html>
