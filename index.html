@@ -131,6 +131,7 @@
                                                 <div onclick="activatePeriode2()" id="btn2" class="btn">
                                                 Periode 2
                                                 </div>
+                                          <p id="hint"><-- geselecteerd</p>
                                       
                                         </div>
                                       </div>
@@ -423,6 +424,7 @@
         var x2 = document.getElementById("periode2");
         var btn1 = document.getElementById("btn1")
         var btn2 = document.getElementById("btn2")
+        var hint = document.getElementById("hint")
 
           x.style.display = "block";
           x.style.position = "relative";
@@ -430,6 +432,7 @@
           x2.style.display = "none";
           btn1.style.background = "#b8a07e";
           btn2.style.background = "#333";
+          hint.style.opacity = "0";
 
           document.getElementById('filterALL').click();
 }
@@ -439,11 +442,13 @@ function activatePeriode2() {
         var x2 = document.getElementById("periode1");
         var btn1 = document.getElementById("btn2")
         var btn2 = document.getElementById("btn1")
+        var hint = document.getElementById("hint")
         
           x.style.display = "block";
           x2.style.display = "none";
           btn1.style.background = "#b8a07e";
           btn2.style.background = "#333";
+          hint.style.opacity = "1";
 
           document.getElementById('filterALL').click();
 }
