@@ -193,7 +193,7 @@
                                             <img src="images/dev4.png" class="malvae2" alt="image"><br><br><br>
                                             <img src="images/dev4.gif" class="malvaeVideo"><br><br><br>
                                             <div class="journal-txt">
-                                                <h4><a href="#">5. Recepten favorieten</a></h4>
+                                                <h4><a href="#">Recepten favorieten</a></h4>
                                             </div>
                                             <p>
                                                Op de recept detail pagina wordt via parameters de bijhorende data van het recept meegegeven. Daarnaast is er een state waarin 
@@ -213,6 +213,29 @@
                                             <img src="images/dev5.png" class="malvae2" alt="image"><br><br><br>
                                             <img src="images/dev5.gif" class="malvaeVideo"><br><br><br>
                                             <br><br>
+                                            <div class="journal-txt">
+                                                <h4><a href="#">Language Select</a></h4>
+                                            </div>
+                                            <p>
+                                                Vanuit de opdrachtgever hebben we de vraag gekregen in welke taal de app ontwikkeld moet worden. Het bedrijf Simac bestaat grotendeels uit 
+                                                Nederlands sprekende werknemers, maar niet elke werknemer spreekt nederlands. Daarnaast zou de app in een later stadium ook in andere bedrijven 
+                                                gereleased kunnen worden. Om deze redenen heb ik gekozen een language select in de app te implementeren, voor nu bestaat deze uit de keuze tussen Engels en Nederlands.
+                                            
+                                                <br><br>
+                                                Dit is gedaan door middel van het plaatsen van een context provider om de navigatie van de app in de App.tsx file. Hierdoor zit de context provider 
+                                                boven alle schermen van de app. In deze context provider wordt de gekozen taal in de local storage van een device opgeslagen. Er worden in de App.tsx
+                                                2 functies geschreven, de eerste is voor het ophalen voor de current language context en de 2de is voor het setten van een nieuwe language context.
+                                                Deze kunnen vervolgens op alle schermen van de app geimporteerd en gebruikt worden. Op deze manier kan de language aangepast worden door middel van het klikken 
+                                                op de 2 vlaggetjes. De vertalingen worden in aparte files door mij gedefinieerd, dit zorgt ervoor dat verdere uitbreiding naar andere talen vrij eenvoudig blijft. 
+                                             </p>
+                                             <a target="_blank" href="https://github.com/luukvanettinger/simac-frontend/commit/65d83672e9382a8b0e6483f31c9132ce79952ffa">
+                                                 <div class="btn">
+                                                 View on GitHub <i class="ion-social-github"></i>
+                                                 </div>
+                                             </a>
+                                             <img src="images/languageSelect.png" class="malvae2" alt="image"><br><br><br>
+                                             <img src="images/languageSelect.gif" class="malvaeVideo"><br><br><br>
+                                             <br><br>
 <div class="journal-txt">
     <h4><a href="#">Link naar Prototype</a></h4>
 </div>
